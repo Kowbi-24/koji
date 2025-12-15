@@ -1,0 +1,156 @@
+body {
+    margin: 10px;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 20px);
+    box-sizing: border-box;
+}
+ 
+.outside-container{
+    width: 100%;
+    height: 100%;
+}
+.login-page-container {
+    position: relative;
+    width: 800px;
+    max-width: 90%;
+    margin: 0 auto; 
+    background: white;
+    padding: 40px;
+    text-align: center;
+    overflow: hidden; 
+}
+ 
+ 
+.headline {
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 7.5em;
+    font-weight: 400; /* Regular weight */
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+    margin-top: -10%;
+}
+ 
+.logo-name {
+    display: block; /* Puts 'Koji' on its own line */
+    font-size: 1.5em; /* Larger size for 'Koji' */
+    margin-top: 5px;
+}
+ 
+ 
+.login-form {
+    display: flex;            
+    flex-direction: column;    
+    align-items: center;       
+    width: 100%;               
+    max-width: 400px;          
+    margin: 20px auto 0 auto;  
+}
+ 
+.email-label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font: 'Afacad', sans-serif;
+    font-size: 0.9em;
+    color: #000000;
+    margin-left: 40px;
+}
+ 
+.email-input {
+    width: 300px;
+    max-width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #E4AA2E;
+    border-radius: 20px;
+    font-size: 1em;
+    text-align: left;
+}
+.email-input:focus {
+    outline: none;
+    border-color: #E4AA2E;
+}
+.email-input::placeholder {
+    color: #E4AA2E;
+    font-weight: bold;
+}
+ 
+.email-input::-webkit-input-placeholder {
+    color: #E4AA2E;
+    font-weight: bold;
+}
+ 
+.email-input:-moz-placeholder {
+    color: #E4AA2E;
+    font-weight: bold;
+}
+ 
+.email-input:-ms-input-placeholder {
+    color: #E4AA2E;
+    font-weight: bold;
+}
+ 
+.signup-button {
+    width: 300px; /* Match input width */
+    max-width: 100%;
+    padding: 12px;
+    background-color: #e5a438; /* The prominent gold/mustard color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.signup-button:hover {
+    background-color: #d89830;
+}
+ 
+/* --- Log In Link/Prompt --- */
+.login-link-container {
+    margin-top: 30px;
+    width: 300px; /* Match form element width for better alignment */
+    max-width: 100%;
+    position: relative;
+    align-self: center; /* Ensures the container is centered */
+}
+ 
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 15px 0;
+}
+ 
+.login-prompt {
+    font-size: 0.9em;
+    color: #888;
+    margin: 0;
+}
+ 
+.login-link {
+    color: #555;
+    text-decoration: none;
+    font-weight: 600;
+}
+ 
+.login-link:hover {
+    text-decoration: underline;
+}
+ 
+ 
+.login-card {
+    position: relative;
+    z-index: 10; /* Ensure content is on top of the background graphics */
+    background: white; /* Ensures the main content area is fully opaque */
+    padding: 20px;
+    border-radius: 8px;
+}
+ 
