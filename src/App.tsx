@@ -6,7 +6,7 @@ import { Routes , Route , Navigate } from 'react-router-dom';
  
 function App() {
  
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated] = useState(false);
  
   return (
     <>

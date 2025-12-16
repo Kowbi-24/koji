@@ -78,6 +78,7 @@ body {
 .email-input::placeholder {
     color: #E4AA2E;
     font-weight: bold;
+    font: 'Afacad', sans-serif;
 }
  
 .email-input::-webkit-input-placeholder {
@@ -113,20 +114,39 @@ body {
     background-color: #d89830;
 }
  
-/* --- Log In Link/Prompt --- */
+
 .login-link-container {
-    margin-top: 30px;
-    width: 300px; /* Match form element width for better alignment */
+    margin: 30px auto 0 auto; 
+    width: 300px;
     max-width: 100%;
     position: relative;
-    align-self: center; /* Ensures the container is centered */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
 }
  
-.divider {
-    border: 0;
-    height: 1px;
-    background-color: #ddd;
-    margin: 15px 0;
+.prompt-with-divider {
+    color: #000; 
+    font-size: 1.1em;
+    font: 'Afacad', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 10px; 
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    white-space: nowrap; 
+    width: 100%; 
+}
+
+.prompt-with-divider::before,
+.prompt-with-divider::after {
+    content: '';
+    flex-grow: 1; 
+    height: 2px;
+    background-color: #E4AA2E; 
+    margin: 0 10px; 
 }
  
 .login-prompt {
@@ -136,7 +156,7 @@ body {
 }
  
 .login-link {
-    color: #555;
+    color: #000000;
     text-decoration: none;
     font-weight: 600;
 }

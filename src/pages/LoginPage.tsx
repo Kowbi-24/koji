@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/LoginPage.css';
- 
+
 const LoginPage: React.FC = () => {
     return (
         <div className="outside-container">
@@ -22,28 +22,27 @@ const LoginPage: React.FC = () => {
                             className="email-input"
                             required
                         />
- 
+
                         {/* Sign Up Button */}
                         <button type="submit" className="signup-button">
                             Sign up
                         </button>
                     </form>
- 
+
                     {/* Log In Link for existing users */}
                     <div className="login-link-container">
-                        <hr className="divider" />
-                        <p className="login-prompt">
-                            already have an account?{' '}
-                            <a href="/login" className="login-link">
-                                Log in
-                            </a>
+                        <p className="prompt-with-divider">
+                            already have an account?
                         </p>
+                        <a href="/login" className="login-link centered-link">
+                            Log in
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
- 
+
     );
 };
- 
+
 export default LoginPage;
