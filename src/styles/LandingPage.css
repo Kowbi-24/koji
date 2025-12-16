@@ -1,0 +1,135 @@
+/* --- Global Styles for Landing Page --- */
+body{
+    overflow-y: hidden;
+}
+.landing-container {
+    width: 100%; 
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    
+}
+
+/* --- Header/Navigation --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Padding on the sides */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the header content */
+}
+
+.header-logo {
+    font-family: 'Libre Caslon Display', serif; /* Use the same sophisticated font as the login headline */
+    font-size: 2.8em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.header-nav a:hover {
+    color: #E4AA2E; /* Gold hover color */
+}
+
+.signup-free-button {
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    color: #000;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signup-free-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 40px;
+    min-height: 500px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 50%; /* Content takes up roughly half the space */
+    z-index: 10;
+}
+
+.hero-headline {
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 4em;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+.logo-text {
+    /* Highlights "Koji" */
+    display: inline;
+    font-size: 1em;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #E4AA2E; /* Prominent Gold Color */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    background-color: #d89830;
+}
+
+.difference-section {
+    padding: 0 40px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #555;
+}
